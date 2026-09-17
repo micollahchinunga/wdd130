@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #0284c7;    /* Deep sky blue (representing water/rivers) */
+  --secondary-color: #16a34a;  /* Forest green (representing lush nature/trees) */
+  --accent1-color: #f59e0b;     /* Safety orange/amber (representing life jackets and sunshine) */
+  --accent2-color: #f8fafc;         /* Clean off-white background */
+  --banner-color: #0c4a6e;     /* Dark navy blue, used for full-width banners */
+  --heading-font: "Times New Roman","Georgia",serif;
+  --body-font:Arial,Helvetica,sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    color: #1e293b;
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+header img {
+    height: 60px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+h1 , h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.socialmedia a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+}
+
+.hero img{
+    display:block;
+    width:100%;
+    height: auto;
+}
+
+.hero h1{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.85;
+    background-color: var(--banner-color);
+    color: var(--accent2-color);
+}
+
+.hero-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(15, 23, 42, 0.7);
+    color: var(--accent2-color);
+    padding: 16px;
+    margin: 0;
+}
+
+.hero-caption p {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-caption img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid var(--accent2-color);
+    flex-shrink: 0;
+}
+
+/* Full-width section banners, like "History" and the closing quote */
+.banner {
+    background-color: var(--banner-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+}
+
+section.history p {
+    margin: 16px;
+    padding: 8px;
+    color: #1e293b;
+}
