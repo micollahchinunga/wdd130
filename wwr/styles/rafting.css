@@ -41,12 +41,17 @@ header nav ul {
     list-style: none;
 }
 
+header nav a {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
 h1 , h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav, p, section {
     margin: 16px;
     padding: 8px;
 }
@@ -100,32 +105,29 @@ nav, p, section, article {
     color: var(--accent2-color);
 }
 
-.hero-caption {
+.hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
     background-color: rgba(15, 23, 42, 0.7);
     color: var(--accent2-color);
     padding: 16px;
     margin: 0;
 }
 
-.hero-caption p {
-    flex: 1;
+.hero article p {
     margin: 0;
     padding: 0;
 }
 
-.hero-caption img {
+.hero article img {
+    float: right;
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 3px solid var(--accent2-color);
-    flex-shrink: 0;
+    margin-left: 16px;
+    border: 3px solid var(--accent1-color);
 }
 
 /* Full-width section banners, like "History" and the closing quote */
