@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Structure</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+
+    <!-- Header Section: Contains navigation, logos, or titles -->
+    <header>
+        <h1>Website Title</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section: Contains the primary content of the page -->
+    <main>
+        <section>
+            <h2>Main Content Heading</h2>
+            <p>This is where the unique content of your webpage goes.</p>
+        </section>
+        <form>
+            <div class="form-item column1">
+                <label for="fullname">full name </label>
+                <input type="text" id="fullname" name="full name" required>
+            </div>
+
+            <div class="form-item column1">
+                <label for="useremail">Email Address:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+
+            <div class="form-item column1">
+                <label for="browser">what's your favorite browser?</label>
+                <select name="whats your favourite browser" id="browser">
+                    <option value="1">Google</option>
+                    <option value="2">Brave</option>
+                    <option value="3">Edge</option>
+                </select>
+            </div>
+
+            <div class="form-item column1">
+                <label for="pet">do you have a house pet? </label>
+                <input type="checkbox" id="pet" name="pet">
+            </div>
+
+            <div class="form-item column1">
+                <label for="feedback">list places you have lived </label>
+                <textarea name="feedback" id="feedback" rows="4"
+                  placeholder="stillwater florida,Amsterdam, London,Paris,Berlin"></textarea>
+            </div>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+    <!-- Footer Section: Contains copyright, links, or contact info -->
+    <footer>
+        <p>2026 Your Company Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

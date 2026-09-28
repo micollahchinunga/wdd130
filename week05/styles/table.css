@@ -1,0 +1,61 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    letter-spacing: 1px
+}
+
+th,
+td {
+    border: 1px solid rgb(150 150 150);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+thead,
+tr tfoot tr {
+    background-color: rgb(0 0 0);
+    color: white;
+    font-weight: 700;
+}
+
+.hover-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hover-table th,
+.hover-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hover-table tr {
+    transition: background-color 0.2s ease;
+}
+
+.hover-table tr:hover {
+    background-color: #c1b7b7;
+    /* Light grey highlight */
+    cursor: pointer;
+
+    .hover-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .hover-table th,
+    .hover-table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* 1. Add a subtle transition to the row background */
+    .hover-table tr {
+        transition: background-color 0.2s ease;
+    }
+
+    .hover-table tr:hover {
+        background-color: #130cd4
+            /* Light grey highlight */
+            cursor: pointer;
+    }
